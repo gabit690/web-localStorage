@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafdcb;
+}
+
+/* Estilos generales para los elementos */
+
+#contenedor {
+    width: 94%;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-left: 20px;
+    text-decoration-line: underline;
+}
+
+label {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label>p {
+    display: inline-block;
+    width: 120px;
+    font-size: 1.7em;
+}
+
+label>input {
+    height: 30px;
+    width: 30%;
+    text-align: center;
+    font-size: 1.0em;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+/* Estilos particulares para los elementos */
+
+#contenedor #ingresoDeProductos {
+    padding: 30px 0px;
+    border: 10px double black;
+    border-bottom: 0;
+}
+
+#btn_agregar, #btn_eliminar {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#contenedor #borradoDeProductos {
+    padding: 30px 0px;
+    border: 10px double black;
+    border-bottom: 0;
+}
+
+#contenedor #datosDeProductos {
+    display: flex;
+    padding: 30px 0px;
+    border: 10px double black;
+}
+
+#datosDeProductos #tabla {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#tabla table {
+    border-collapse: collapse;
+
+}
+
+table caption {
+    padding: 5px 0px;
+    border: 3px solid black;
+    border-bottom: 0;
+    text-transform: uppercase;
+}
+
+th, td {
+    border: 3px solid black;
+}
+
+th {
+    padding: 5px 10px;
+    background: mediumturquoise;
+}
+
+td {
+    padding: 3px 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: silver;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+#datosDeProductos #interaccion {
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#interaccion p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#interaccion #contador{
+    font-size: 3.0em;
+    font-weight: bold;
+}
