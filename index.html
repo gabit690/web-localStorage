@@ -10,26 +10,32 @@
 <body>
     <div id="contenedor">
         <div id="ingresoDeProductos">
-            <div id="ingresoDeDatos">
-                <h2>Ingreso de productos.</h2>
-                <label>
-                    <p>Producto: </p>
-                    <input id="tipo" type="text" placeholder="Ingrese el nombre" maxlength="20" required>
-                </label>
-                <label>
-                    <p>Marca: </p>
-                    <input id="marca" type="text" placeholder="Ingrese la marca" maxlength="10" required>
-                </label>
-                <label>
-                    <p>Precio($): </p>
-                    <input id="precio" type="text" placeholder="Ingrese el precio" maxlength="5" required>
-                </label>
-                <label>
-                    <p>Stock: </p>
-                    <input id="stock" type="text" placeholder="Ingrese la cantidad disponible" maxlength="5" required>
-                </label>
+            <h2>Ingreso de productos.</h2>
+            <div id="contenidoParaIngreso">
+                <div id="ingresoDeDatos">
+                    <label>
+                        <p>Producto: </p>
+                        <input id="tipo" type="text" placeholder="Ingrese el nombre" maxlength="20" required>
+                    </label>
+                    <label>
+                        <p>Marca: </p>
+                        <input id="marca" type="text" placeholder="Ingrese la marca" maxlength="10" required>
+                    </label>
+                    <label>
+                        <p>Precio($): </p>
+                        <input id="precio" type="text" placeholder="Ingrese el precio" maxlength="5" required>
+                    </label>
+                    <label>
+                        <p>Stock: </p>
+                        <input id="stock" type="text" placeholder="Ingrese la cantidad disponible" maxlength="5" required>
+                    </label>
+                    <button id="btn_agregar">Agregar Producto</button>
+                </div>
+                <div id="informacion">
+                    <p>Cantidad de productos</p>
+                    <div id="contador">0</div>
+                </div>
             </div>
-            <button id="btn_agregar">Agregar Producto</button>
         </div>
         <div id="borradoDeProductos">
             <h2>Borrado de productos.</h2>
@@ -40,30 +46,24 @@
             <button id="btn_eliminar">Eliminar Producto</button>
         </div>
         <div id="datosDeProductos">
-            <div id="tabla">
-                <table>
-                    <caption>Listado de productos</caption>
-                    <tr>
-                        <th>Código</th>
-                        <th>Producto</th>
-                        <th>Marca</th>
-                        <th>Precio($)</th>
-                        <th>Stock</th>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>         
-                </table>
-            </div>
-            <div id="interaccion">
-                <p>Cantidad de productos</p>
-                <div id="contador">0</div>
-                <button id="btn_limpiar">Vaciar Tabla</button>
-            </div>
+            <table>
+                <caption>Listado de productos</caption>
+                <tr>
+                    <th>Código</th>
+                    <th>Producto</th>
+                    <th>Marca</th>
+                    <th>Precio($)</th>
+                    <th>Stock</th>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>         
+            </table>
+            <button id="btn_limpiar">Vaciar Tabla</button>
         </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>

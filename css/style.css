@@ -11,6 +11,7 @@ body {
 
 #contenedor {
     width: 94%;
+    min-width: 800px;
     margin: 20px auto;
 }
 
@@ -28,13 +29,13 @@ label {
 
 label>p {
     display: inline-block;
-    width: 120px;
+    width: 140px;
     font-size: 1.7em;
 }
 
 label>input {
     height: 30px;
-    width: 30%;
+    width: 60%;
     text-align: center;
     font-size: 1.0em;
 }
@@ -54,7 +55,34 @@ button {
     border-bottom: 0;
 }
 
-#btn_agregar, #btn_eliminar {
+#ingresoDeProductos #contenidoParaIngreso {
+    display: flex;
+}
+
+
+#contenidoParaIngreso #ingresoDeDatos {
+    width: 60%;
+}
+
+#contenidoParaIngreso #informacion {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#informacion p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#informacion #contador{
+    font-size: 3.0em;
+    font-weight: bold;
+}
+
+#btn_agregar, #btn_eliminar, #btn_limpiar {
     display: block;
     margin: 0 auto;
     margin-top: 30px;
@@ -66,25 +94,24 @@ button {
     border-bottom: 0;
 }
 
+/* Achico el tamaño de input por defecto para esta seccion. */
+#borradoDeProductos label>input {
+    width: 20%;
+}
+
 #contenedor #datosDeProductos {
     display: flex;
+    flex-flow: column;
+    align-items: center;
     padding: 30px 0px;
     border: 10px double black;
 }
 
-#datosDeProductos #tabla {
-    width: 70%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+
+#datosDeProductos table {
+    border-collapse: collapse;
     text-align: center;
     font-size: 1.3em;
-}
-
-#tabla table {
-    border-collapse: collapse;
-
 }
 
 table caption {
@@ -113,22 +140,4 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
     background-color: white;
-}
-
-#datosDeProductos #interaccion {
-    width: 30%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#interaccion p{
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#interaccion #contador{
-    font-size: 3.0em;
-    font-weight: bold;
 }
